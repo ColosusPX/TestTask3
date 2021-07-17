@@ -31,6 +31,7 @@ public class UIController : MonoBehaviour
     void SliderPanel()
     {
         _sliderPanel.sizeDelta = new Vector2(_canvas.sizeDelta.x, _sliderPanel.sizeDelta.y);
+        _sliderPanel.transform.localScale = new Vector3(1, _canvas.sizeDelta.y * 0.1f / _sliderPanel.sizeDelta.y, 1);
         _sliderPanel.position = new Vector3(_canvas.sizeDelta.x / 2, _canvas.sizeDelta.y / 4);
     }
 
@@ -40,6 +41,7 @@ public class UIController : MonoBehaviour
     void PlusMinusPanel()
     {
         _plusMinusPanel.sizeDelta = new Vector2(_canvas.sizeDelta.x, _plusMinusPanel.sizeDelta.y);
+        _plusMinusPanel.transform.localScale = new Vector3(1, _canvas.sizeDelta.y * 0.1f / _plusMinusPanel.sizeDelta.y, 1);
         _plusMinusPanel.position = new Vector3(_canvas.sizeDelta.x / 2, _canvas.sizeDelta.y / 8 * 3);
     }
 
@@ -49,6 +51,7 @@ public class UIController : MonoBehaviour
     void RandomPanel()
     {
         _randomPanel.sizeDelta = new Vector2(_canvas.sizeDelta.x, _randomPanel.sizeDelta.y);
+        _randomPanel.transform.localScale = new Vector3(1, _canvas.sizeDelta.y * 0.1f / _randomPanel.sizeDelta.y, 1);
         _randomPanel.position = new Vector3(_canvas.sizeDelta.x / 2, _canvas.sizeDelta.y / 8);
     }
 
