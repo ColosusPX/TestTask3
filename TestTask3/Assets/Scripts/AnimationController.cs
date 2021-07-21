@@ -19,7 +19,7 @@ public class AnimationController : MonoBehaviour
     {
         _panel.anchoredPosition += (Vector2)(_direction - _startPosition) * Time.deltaTime / 2;
 
-        if (Mathf.Abs((_panel.anchoredPosition - (Vector2)_direction).magnitude) < 5)
+        if (Mathf.Abs((_panel.anchoredPosition - (Vector2)_direction).magnitude) < 20f)
         {
             Vector3 vector = _startPosition;
             _startPosition = _direction;
